@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductoService {
 
-  constructor(private http: HttpClientModule) { }
+  constructor(private http: HttpClient) { }
 
   getNewReleases(){
-    this.http.get('http://localhost:8081/api/producto')
+    this.http.
+    get('http://localhost:8081/api/producto')
     .subscribe(data=>{
      console.log(data);
    });
