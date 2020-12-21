@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/shared/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegistrarComponent } from './components/producto/registrar/registrar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
+    RegistrarComponent,
   ],
   imports: [
     BrowserModule,

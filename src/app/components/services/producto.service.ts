@@ -6,9 +6,13 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class ProductoService {
 
-  constructor(private http: HttpClientModule) {
-   this.http.get('http://localhost:8081/api/producto').subscribe(data=>{
+  constructor(private http: HttpClientModule) { }
+
+  getNewReleases(){
+    this.http.get('http://localhost:8081/api/producto')
+    .subscribe(data=>{
      console.log(data);
    });
-   }
+  }
+  
 }

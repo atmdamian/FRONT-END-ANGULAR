@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 import { HomeComponent } from './components/shared/home/home.component';
+import { RegistrarComponent } from './components/producto/registrar/registrar.component';
 //import { Name2Component } from './';
 //import { Name3Component } from './';
 //import { Name4Component } from './';
@@ -9,6 +10,7 @@ import { HomeComponent } from './components/shared/home/home.component';
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
+    { path: 'registrar', component: RegistrarComponent},
     { path: '**', pathMatch: 'full', redirectTo:'home' }//,
    // { path: 'path2', component: Name2Component },
    // { path: 'path3', component: Name3Component },
