@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { HomeComponent } from './components/shared/home/home.component';
 import { RegistrarComponent } from './components/producto/registrar/registrar.component';
+import { ReactiveComponent } from './components/pages/reactive/reactive.component';
+import { TemplateComponent } from './components/pages/template/template.component';
 //import { Name2Component } from './';
 //import { Name3Component } from './';
 //import { Name4Component } from './';
@@ -11,6 +13,8 @@ import { RegistrarComponent } from './components/producto/registrar/registrar.co
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'registrar', component: RegistrarComponent},
+    { path: 'reactive', component: ReactiveComponent},
+    { path: 'template', component:  TemplateComponent},
     { path: '**', pathMatch: 'full', redirectTo:'home' }//,
    // { path: 'path2', component: Name2Component },
    // { path: 'path3', component: Name3Component },
