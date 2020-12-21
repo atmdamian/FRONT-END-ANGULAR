@@ -7,9 +7,14 @@ import { ProductoService } from '../../services/producto.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+  catalogoProductos : any[]=[];
 
   constructor( private productos :ProductoService) {
-    this.productos.getNewReleases();
+    this.productos.getNewReleases().subscribe((data: any)=>{
+      console.log(data);
+      this.catalogoProductos = data;
+    }); 
+    
    }
 
 }

@@ -1,6 +1,14 @@
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="animated fadeIn fast">App Shop Online</h1>
-        <p class="animated fadeIn">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+<div class="jumbotron jumbotron-fluid main-container">
+
+    <div class="container ">
+        <div class="card-columns">
+            <div *ngFor="let catalogo of catalogoProductos" class="card">
+                <img class="card-img-top" src="..." alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{catalogo.nombre}}</h5>
+                    <p class="card-text">{{catalogo.descripcion}}</p>
+                    <p class="card-text">${{catalogo.precio}}</p>
+                </div>
+            </div>
+        </div>
     </div>
-</div>

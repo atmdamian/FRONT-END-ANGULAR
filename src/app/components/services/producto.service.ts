@@ -10,11 +10,7 @@ export class ProductoService {
   constructor(private http: HttpClient) { }
 
   getNewReleases(){
-    this.http.
-    get('http://localhost:8081/api/producto')
-    .subscribe(data=>{
-     console.log(data);
-   });
+    return this.http.get('http://localhost:8081/api/producto');   
   }
   
 }
